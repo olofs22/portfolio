@@ -54,6 +54,22 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -74,6 +90,14 @@
   </header>
 
   <main>
+    <section class="about">
+      <img src="din-bild.jpg" alt="Bild på mig">
+      <div>
+        <h2>Om mig</h2>
+        <p>Hej! Jag är [Ditt namn], en passionerad utvecklare som gillar att skapa smarta lösningar och snygga gränssnitt. Här hittar du mina tidigare jobb, vilka språk jag kan koda i och vad jag har studerat.</p>
+      </div>
+    </section>
+
     <section id="jobb">
       <h2>Tidigare jobb</h2>
       <ul>
@@ -106,4 +130,3 @@
   </footer>
 </body>
 </html>
-
