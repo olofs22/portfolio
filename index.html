@@ -9,14 +9,15 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f9;
+      background: #6565dc;
       color: #333;
     }
     header {
-      background: #4a90e2;
+      background: linear-gradient(to bottom, #4a90e2, #6565dc);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
+     
     }
     header h1 {
       margin: 0;
@@ -77,15 +78,33 @@
       color: white;
       margin-top: 2rem;
     }
-  </style>
+    .navvv {
+      transition: color 0.3s;
+    }
+    .navvv:hover {
+      color: #ffdd57;
+    }
+
+    a {
+      color: #4a90e2;
+    }
+    .navv{
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      text-decoration: underline;
+    
+    }
+    </style>
 </head>
 <body>
   <header>
-    <h1>Mitt Portfolio</h1>
-    <nav>
-      <a href="#jobb">Tidigare jobb</a>
-      <a href="#kod">Kod</a>
-      <a href="#studier">Studier</a>
+    <h1>Olof Svensson</h1>
+    <nav class="navv">
+      <a href="#jobb"class="navvv">Tidigare jobb</a>
+      <a href="#kod" class="navvv">Kod</a>
+      <a href="#studier" class="navvv">Studier</a>
+      <a href="#footer" class="navvv">Kontakt</a>
     </nav>
   </header>
 
@@ -94,15 +113,14 @@
       <img src="din-bild.jpg" alt="Bild på mig">
       <div>
         <h2>Om mig</h2>
-        <p>Hej! Jag är [Ditt namn], en passionerad utvecklare som gillar att skapa smarta lösningar och snygga gränssnitt. Här hittar du mina tidigare jobb, vilka språk jag kan koda i och vad jag har studerat.</p>
+        <p>Hej! Jag heter Olof Svensson och är 21 år gammal, jag studerar Backend Developer inriktning Cloud på NBI-Handelsakademin. Jag har liten tidigare erfarenhet av kod men ser fram emot att bli en flitig kodskrivare för större applikationer.</p>
       </div>
     </section>
 
     <section id="jobb">
       <h2>Tidigare jobb</h2>
       <ul>
-        <li><strong>Jobbtitel 1</strong> – Kort beskrivning av vad du gjorde</li>
-        <li><strong>Jobbtitel 2</strong> – Kort beskrivning av vad du gjorde</li>
+        <li><strong>Bartender Scandic Rubinen:</strong> Sommrarna har spenderats bakom baren på Scandic Rubinen där man under sena arbetspass blandat drinkar och tagit hand om festligt folk!</li>
       </ul>
     </section>
 
@@ -110,23 +128,25 @@
       <h2>Vilken sorts kod jag kan skriva</h2>
       <ul>
         <li>HTML, CSS & JavaScript</li>
-        <li>Python</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li>C# (pluggar)</li>
+        <li>Azure (pluggar)
+        <li>Blazor (Pluggar)</li>
+        </li>
       </ul>
     </section>
 
     <section id="studier">
       <h2>Vad jag har pluggat</h2>
       <ul>
-        <li>Utbildning 1 – Kort beskrivning</li>
-        <li>Utbildning 2 – Kort beskrivning</li>
+        <li>Gymnasial Utbildning: Sjölins Gymnasium Göteborg - Ekonomi Juridik</li>
+        <li>Yrkeshögskole-utbildning: NBI/Handelsakademin - Backend Developer inriktning Cloud</li>
       </ul>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Mitt Namn</p>
-  </footer>
+  <footer id="footer">
+    <p>© 2025 Olof Svensson</p>
+    <p>Kontakta mig: <a href="mailto:olof.business.svensson@gmail.com">olof.business.svensson@gmail.com</a> | <a href="https://github.com/olofs22" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/olof-svensson-a34769244" target="_blank">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
